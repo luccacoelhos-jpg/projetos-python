@@ -2,7 +2,7 @@
 def formatar(nome):
     return nome.upper()
 # --- Aluno 2: Verificação de acesso. ---
-def verificação(idade):
+def verificador(idade):
     if idade >=18:
       return "autorizado"
     else:
