@@ -9,7 +9,7 @@ def verificação(idade):
       return "Não autorizado"
 # --- Aluno 3: Mensagem de retorno. ---
 def gerar_mensagem(status):
-   if status == "Autorizada":
+   if status == "autorizada":
       return "Tenha uma ótima sessão."
    else:
       return "Sinto muito, idade não autorizada."
@@ -17,6 +17,8 @@ def gerar_mensagem(status):
    nome_filme = input("Digite o nome do filme:")
    idade_filme = int(input("Digite sua idade:"))
    filme = formatar(nome_filme)
-   status_final = verificador(idade_filme)
+   status_final = verificação(idade_filme)
    mensagem = gerar_mensagem(status_final)
-   
+   print(f"\n filme:{filme}")
+   print(f"Status:{status_final}")
+   print(f"Aviso:{mensagem}")
